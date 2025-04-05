@@ -12,6 +12,7 @@ services:
     environment:
       - NODE_ENV=production
       - REACT_APP_DEBUG=true
+      - PUBLIC_URL=/
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
       - ./logs:/var/log/nginx
