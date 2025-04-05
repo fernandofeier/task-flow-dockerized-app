@@ -1,8 +1,12 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import TaskApp from '@/components/TaskApp';
 
 const Index = () => {
+  useEffect(() => {
+    console.log('Index component mounted');
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
       <header className="py-6 bg-white shadow-sm">
